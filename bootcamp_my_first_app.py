@@ -6,8 +6,8 @@ st.caption('''Simple but effective tips for every python lovers''')
 from PIL import Image
 image = Image.open('1_5IFgojJ4nU8f0YKTcjWDrg.jpeg')
 
-st.image(image, caption='''Photo by [Miesha Maiden](https://www.pexels.com/@miphotography/) 
-from [Pexels](https://www.pexels.com/photo/pineapple)''')
+st.caption('''<center> Photo by [**Miesha Maiden**](https://www.pexels.com/@miphotography/) 
+from [**Pexels**](https://www.pexels.com/photo/pineapple) <center>''')
 
 st.write('''The compactness of Python can make a developer’s life a lot easier when 
 writing lines and lines of code. But there are some lesser-known Python tricks that 
