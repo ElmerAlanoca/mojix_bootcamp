@@ -17,6 +17,8 @@ In today’s article, I will discuss 10 Python tips and tricks that will be real
 helpful for beginners to write more compact code. Knowing these tips and tricks 
 will definitely save you some valuable time.''')
 
+st.write('''___''')
+
 
 st.subheader('1. Walrus operator')
 st.write('''The `Walrus` **or** `:=` operator is one of the latest additions to python 3.8. 
@@ -235,11 +237,12 @@ Wrong password'''
 st.code(code, language='python')
 
 
-st.write('''~~~
+st.write('''
 | Here is [a book](https://www.amazon.com/Automate-Boring-Stuff-Python-2nd/dp/1593279922?dchild=1&keywords=automate+the+boring+stuff+with+python&qid=1602697607&sr=8-2&linkCode=sl1&tag=pranjal20-20&linkId=71b2efa5db080e8f74068aebec7d7fb0&language=en_US&ref_=as_li_ss_tl) on **Python programming** that I would definitely recommend 
 
-| for all **beginners**.
-~~~''')
+| for all **beginners**.''')
+
+st.write('''___''')
 
 
 st.subheader('Conclusion')
@@ -257,6 +260,7 @@ However, the recommended resource is experienced by me and helped me in my
 data science career journey.''')
 
 st.write('''___''')
+
 
 st.write('''| Before you go…''')
 
