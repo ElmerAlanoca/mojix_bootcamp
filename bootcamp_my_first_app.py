@@ -6,7 +6,8 @@ st.caption('''Simple but effective tips for every python lovers''')
 from PIL import Image
 image = Image.open('1_5IFgojJ4nU8f0YKTcjWDrg.jpeg')
 
-st.image(image, caption='Photo by Miesha Maiden from Pexels')
+st.image(image, caption='''Photo by [**Miesha Maiden**](https://www.pexels.com/@miphotography/) 
+from [**Pexels**](https://www.pexels.com/photo/pineapple)''')
 
 st.write('''The compactness of Python can make a developer’s life a lot easier when 
 writing lines and lines of code. But there are some lesser-known Python tricks that 
@@ -26,31 +27,31 @@ st.write('''__| Example__
 
 If we want to check and print the length of a list:''')
 code = '''
-    Mylist = [1,2,3]
-    if(l := len(mylist) > 2)
-    print(l)'''
+Mylist = [1,2,3]
+if(l := len(mylist) > 2)
+print(l)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    3'''
+3'''
 st.code(code, language='python')
 
 
 st.subheader('2. Splitting a string')
 st.write('''If you want to split the components of a string 
-into a list you can do that easily using the split() function 
+into a list you can do that easily using the `split()` function 
 in python. This will make the string operations a lot easier!''')
 
 st.write('''__| Example__''')
 code = '''
-    string = “hello world”
-    string.split()'''
+string = “hello world”
+string.split()'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    [‘hello’, ‘world’]'''
+[‘hello’, ‘world’]'''
 st.code(code, language='python')
 
 
@@ -60,14 +61,14 @@ with only one line of code using the negative indexing of the string.''')
 
 st.write('''__| Example__''')
 code = '''
-    str=”hello world!”
-    a=str[::-1]
-    print(a)'''
+str=”hello world!”
+a=str[::-1]
+print(a)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    !dlrow olleh'''
+!dlrow olleh'''
 st.code(code, language='python')
 
 
@@ -78,15 +79,15 @@ dictionaries like below two merge them into a single dictionary:''')
 
 st.write('''__| Example__''')
 code = '''
-    d1 = {“a”: 10, “b”:20}
-    d2 = {“c”: 30, “d”:40}
-    d3 = {**d1, **d2}
-    print(d3)'''
+d1 = {“a”: 10, “b”:20}
+d2 = {“c”: 30, “d”:40}
+d3 = {**d1, **d2}
+print(d3)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    {‘a’: 10, ‘b’: 20, ‘c’: 30, ‘d’: 40}'''
+{‘a’: 10, ‘b’: 20, ‘c’: 30, ‘d’: 40}'''
 st.code(code, language='python')
 
 
@@ -97,17 +98,17 @@ lists of the same length.''')
 
 st.write('''__| Example__''')
 code = '''
-    colour = [“red”, “yellow”, “green”]
-    fruits = [‘apple’, ‘banana’, ‘mango’]
-    for colour, fruits in zip(colour, fruits):
-    print(colour, fruits)'''
+colour = [“red”, “yellow”, “green”]
+fruits = [‘apple’, ‘banana’, ‘mango’]
+for colour, fruits in zip(colour, fruits):
+print(colour, fruits)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    red apple
-    yellow banana
-    green mango'''
+red apple
+yellow banana
+green mango'''
 st.code(code, language='python')
 
 st.write('''The `zip()` function can also be used for combining 
@@ -116,15 +117,15 @@ grouping data from the list.''')
 
 st.write('''__| Example__''')
 code = '''
-    students = [“Rajesh”, “kumar”, “Kriti”]
-    marks = [87, 90, 88]
-    dictionary = dict(zip(students, marks))
-    print(dictionary)'''
+students = [“Rajesh”, “kumar”, “Kriti”]
+marks = [87, 90, 88]
+dictionary = dict(zip(students, marks))
+print(dictionary)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    {‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}'''
+{‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}'''
 st.code(code, language='python')
 
 
@@ -135,16 +136,16 @@ a list format, you can use the following technique:''')
 
 st.write('''__| Example__''')
 code = '''
-    mylist = [1,2,3,4,5]
-    a,*b = mylist
-    print(f”a =”,a)
-    print(f”b =”,b)'''
+mylist = [1,2,3,4,5]
+a,*b = mylist
+print(f”a =”,a)
+print(f”b =”,b)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    a = 1
-    b = [2, 3, 4, 5]'''
+a = 1
+b = [2, 3, 4, 5]'''
 st.code(code, language='python')
 
 st.write('''This process is also called list unpacking and you 
@@ -158,14 +159,14 @@ using the `set()` function.''')
 
 st.write('''__| Example__''')
 code = '''
-    mylist = [1,1,1,2,2,3,3,4,4,5,6,7,7,8,9]
-    newlist = set(mylist)
-    print(newlist)'''
+mylist = [1,1,1,2,2,3,3,4,4,5,6,7,7,8,9]
+newlist = set(mylist)
+print(newlist)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    {1, 2, 3, 4, 5, 6, 7, 8, 9}'''
+{1, 2, 3, 4, 5, 6, 7, 8, 9}'''
 st.code(code, language='python')
 
 
@@ -179,13 +180,13 @@ st.write('''__| Example__
 Let’s say you want to write a function to multiply two numbers. 
 Instead of writing a conventional function, you can do that in one line using :''')
 code = '''
-    mul = lambda a,b: a*b
-    mul(5,6)'''
+mul = lambda a,b: a*b
+mul(5,6)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    30'''
+30'''
 st.code(code, language='python')
 
 
@@ -195,17 +196,17 @@ is swapping the values of two variables. In python you can achieve that with one
 
 st.write('''__| Example__''')
 code = '''
-    a = 100
-    b = 200
-    a,b = b,a
-    print(f’a = ‘,a)
-    print(f’b = ‘,b)'''
+a = 100
+b = 200
+a,b = b,a
+print(f’a = ‘,a)
+print(f’b = ‘,b)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    a = 200
-    b = 100'''
+a = 200
+b = 100'''
 st.code(code, language='python')
 
 
@@ -217,26 +218,28 @@ code without a password. Isn’t that cool!''')
 
 st.write('''__| Example__''')
 code = '''
-    from getpass import getpass
-    password = getpass(“password: “)
-    if password == “abcd”:
-        print(“welcome strnger!”)
-    else:
-        print(“wrong password”)'''
+from getpass import getpass
+password = getpass(“password: “)
+if password == “abcd”:
+    print(“welcome strnger!”)
+else:
+    print(“wrong password”)'''
 st.code(code, language='python')
 
 st.write('''__| Output__''')
 code = '''
-    password: **** [abcd]
-    **Welcome stranger!**
-    Password: **** [abdc]
-    Wrong password'''
+password: **** [abcd]
+Welcome stranger!
+Password: **** [abdc]
+Wrong password'''
 st.code(code, language='python')
 
 
-st.write('''| Here is [a book](https://www.amazon.com/Automate-Boring-Stuff-Python-2nd/dp/1593279922?dchild=1&keywords=automate+the+boring+stuff+with+python&qid=1602697607&sr=8-2&linkCode=sl1&tag=pranjal20-20&linkId=71b2efa5db080e8f74068aebec7d7fb0&language=en_US&ref_=as_li_ss_tl) on **Python programming** that I would definitely recommend 
+st.write('''~~~
+| Here is [a book](https://www.amazon.com/Automate-Boring-Stuff-Python-2nd/dp/1593279922?dchild=1&keywords=automate+the+boring+stuff+with+python&qid=1602697607&sr=8-2&linkCode=sl1&tag=pranjal20-20&linkId=71b2efa5db080e8f74068aebec7d7fb0&language=en_US&ref_=as_li_ss_tl) on **Python programming** that I would definitely recommend 
 
-| for all **beginners**.''')
+| for all **beginners**.
+~~~''')
 
 
 st.subheader('Conclusion')
@@ -253,6 +256,7 @@ subscription fee will go to me.
 However, the recommended resource is experienced by me and helped me in my 
 data science career journey.''')
 
+st.write('''___''')
 
 st.write('''| Before you go…''')
 
