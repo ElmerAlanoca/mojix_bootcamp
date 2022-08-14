@@ -25,7 +25,7 @@ st.write('''The `Walrus` **or** `:=` operator is one of the latest additions to 
 It is an assignment operator that lets you assign value to a variable within an expression 
 like conditional statements, loops, etc.''')
 
-st.write('''__| _Example_ __
+st.write('''___| Example___
 
 If we want to check and print the length of a list:''')
 code = '''
@@ -34,7 +34,7 @@ if(l := len(mylist) > 2)
 print(l)'''
 st.code(code, language='python')
 
-st.write('''__| _ Output_ __''')
+st.write('''___| Output___''')
 code = '''
 3'''
 st.code(code, language='python')
