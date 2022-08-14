@@ -17,4 +17,6 @@ helpful for beginners to write more compact code. Knowing these tips and tricks
 will definitely save you some valuable time.''')
 
 st.subheader('1. Walrus operator')
-
+st.write('''The <Walrus> or <:=> operator is one of the latest additions to python 3.8. 
+It is an assignment operator that lets you assign value to a variable within an expression 
+like conditional statements, loops, etc.''')
