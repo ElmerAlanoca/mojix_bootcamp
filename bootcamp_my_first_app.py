@@ -1,8 +1,11 @@
 import streamlit as st
 
-st.markdown('''# **10 Cool Beginner Python Tricks That Will Make Your Life Easier**
-
-#### Simple but effective tips for every python lovers''')
+st.title('''**10 Cool Beginner Python Tricks That Will Make Your Life Easier**''')
+st.header('''Simple but effective tips for every python lovers''')
+st.subheader('''Simple but effective tips for every python lovers''')
+st.caption('''Simple but effective tips for every python lovers''')
+st.code('''Simple but effective tips for every python lovers''')
+st.text('''Simple but effective tips for every python lovers''')
 
 from PIL import Image
 image = Image.open('1_5IFgojJ4nU8f0YKTcjWDrg.jpeg')
