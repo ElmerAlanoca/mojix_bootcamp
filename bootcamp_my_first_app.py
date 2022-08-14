@@ -16,5 +16,5 @@ In today’s article, I will discuss 10 Python tips and tricks that will be real
 helpful for beginners to write more compact code. Knowing these tips and tricks 
 will definitely save you some valuable time.''')
 
-st.header('1. Walrus operator')
+st.subheader('1. Walrus operator')
 
