@@ -3,18 +3,11 @@ import streamlit as st
 st.title('''**10 Cool Beginner Python Tricks That Will Make Your Life Easier**''')
 st.caption('''Simple but effective tips for every python lovers''')
 
-st.markdown('''![1_5IFgojJ4nU8f0YKTcjWDrg.jpeg](https://images.pexels.com/photos/459601/pexels-photo-459601.jpeg "Photo by [**Miesha Maiden**](https://www.pexels.com/@miphotography/) 
-from [**Pexels**](https://www.pexels.com/photo/pineapple)" )''')
 
-#st.markdown('''| ![1_5IFgojJ4nU8f0YKTcjWDrg.jpeg](https://images.pexels.com/photos/459601/pexels-photo-459601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) |''')
-#st.markdown('''| <b>Photo by [**Miesha Maiden**](https://www.pexels.com/@miphotography/) 
-#from [**Pexels**](https://www.pexels.com/photo/pineapple)</b>|''')
+from PIL import Image
+image = Image.open('1_5IFgojJ4nU8f0YKTcjWDrg.jpeg')
 
-#from PIL import Image
-#image = Image.open('1_5IFgojJ4nU8f0YKTcjWDrg.jpeg')
-
-#st.image(image, caption='''Photo by [**Miesha Maiden**](https://www.pexels.com/@miphotography/) 
-#from [**Pexels**](https://www.pexels.com/photo/pineapple)''')
+st.image(image, caption='''Photo by **Miesha Maiden** from **Pexels**''')
 
 st.write('''The compactness of Python can make a developer’s life a lot easier when 
 writing lines and lines of code. But there are some lesser-known Python tricks that 
