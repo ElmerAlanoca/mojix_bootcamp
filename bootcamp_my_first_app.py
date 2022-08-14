@@ -45,13 +45,13 @@ st.write('''If you want to split the components of a string
 into a list you can do that easily using the `split()` function 
 in python. This will make the string operations a lot easier!''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 string = “hello world”
 string.split()'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 [‘hello’, ‘world’]'''
 st.code(code, language='python')
@@ -61,14 +61,14 @@ st.subheader('3. Reversing a string')
 st.write('''If you want to reverse a given string, you can do that 
 with only one line of code using the negative indexing of the string.''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 str=”hello world!”
 a=str[::-1]
 print(a)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 !dlrow olleh'''
 st.code(code, language='python')
@@ -79,7 +79,7 @@ st.write('''This amazing trick will help you merge two dictionaries with just 1
 line of code. We just need to use ** in front of the name of the two 
 dictionaries like below two merge them into a single dictionary:''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 d1 = {“a”: 10, “b”:20}
 d2 = {“c”: 30, “d”:40}
@@ -87,7 +87,7 @@ d3 = {**d1, **d2}
 print(d3)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 {‘a’: 10, ‘b’: 20, ‘c’: 30, ‘d’: 40}'''
 st.code(code, language='python')
@@ -98,7 +98,7 @@ st.write('''The `zip()` function in python can make your life a lot easier
 when working with lists and dictionaries. It is used to combine several 
 lists of the same length.''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 colour = [“red”, “yellow”, “green”]
 fruits = [‘apple’, ‘banana’, ‘mango’]
@@ -106,7 +106,7 @@ for colour, fruits in zip(colour, fruits):
 print(colour, fruits)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 red apple
 yellow banana
@@ -117,7 +117,7 @@ st.write('''The `zip()` function can also be used for combining
 two lists into a dictionary. This method can be really helpful while 
 grouping data from the list.''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 students = [“Rajesh”, “kumar”, “Kriti”]
 marks = [87, 90, 88]
@@ -125,7 +125,7 @@ dictionary = dict(zip(students, marks))
 print(dictionary)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 {‘Rajesh’: 87, ‘kumar’: 90, ‘Kriti’: 88}'''
 st.code(code, language='python')
@@ -136,7 +136,7 @@ st.write('''If you want to assign some specific values of a list
 to a variable and all the remaining values to another variable in 
 a list format, you can use the following technique:''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 mylist = [1,2,3,4,5]
 a,*b = mylist
@@ -144,7 +144,7 @@ print(f”a =”,a)
 print(f”b =”,b)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 a = 1
 b = [2, 3, 4, 5]'''
@@ -159,14 +159,14 @@ st.write('''Do you have duplicate items in your list which
 you want to remove? You can do that with only one line of code 
 using the `set()` function.''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 mylist = [1,1,1,2,2,3,3,4,4,5,6,7,7,8,9]
 newlist = set(mylist)
 print(newlist)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 {1, 2, 3, 4, 5, 6, 7, 8, 9}'''
 st.code(code, language='python')
@@ -177,8 +177,7 @@ st.write('''If you need a function that is not very complicated,
 it can be done easily in one line using `lambda`. They are also called 
 anonymous functions and are used heavily in data science and web development.''')
 
-st.write('''__|__ ___ Example___
-
+st.write('''___| Example___
 Let’s say you want to write a function to multiply two numbers. 
 Instead of writing a conventional function, you can do that in one line using :''')
 code = '''
@@ -186,7 +185,7 @@ mul = lambda a,b: a*b
 mul(5,6)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 30'''
 st.code(code, language='python')
@@ -196,7 +195,7 @@ st.subheader('9. Swapping variable value')
 st.write('''One of the first programs that we learn while learning about variables 
 is swapping the values of two variables. In python you can achieve that with one line of code:''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 a = 100
 b = 200
@@ -205,7 +204,7 @@ print(f’a = ‘,a)
 print(f’b = ‘,b)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 a = 200
 b = 100'''
@@ -218,7 +217,7 @@ password. We will use the `getpass()` **function** from the **library getpass**
 which encodes your input. This will prevent anyone from running the 
 code without a password. Isn’t that cool!''')
 
-st.write('''__|__ ___ Example___''')
+st.write('''___| Example___''')
 code = '''
 from getpass import getpass
 password = getpass(“password: “)
@@ -228,7 +227,7 @@ else:
     print(“wrong password”)'''
 st.code(code, language='python')
 
-st.write('''__|__ ___ Output___''')
+st.write('''___| Output___''')
 code = '''
 password: **** [abcd]
 Welcome stranger!
